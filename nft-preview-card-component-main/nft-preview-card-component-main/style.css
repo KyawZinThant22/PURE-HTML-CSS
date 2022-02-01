@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-blue-main);
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+}
+
+
+/* control the card */
+
+.container {
+    margin: 60px auto;
+    width: 380px;
+    background-color: var(--dark-blue-card);
+    border-radius: 20px;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    margin-left: 28px;
+}
+
+.image {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.title:hover {
+    color: var(--cyan);
+}
+
+.para {
+    color: var(--soft-blue);
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+    width: 315px;
+    padding: 5px;
+}
+
+.eth img {
+    margin-right: 10px;
+}
+
+.eth-text {
+    color: var(--cyan);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.eth-clock {
+    color: var(--soft-blue);
+    font-size: 15px;
+}
+
+
+/* divide */
+
+.divide {
+    margin-top: 10px;
+    border-top: 1px solid var(--dark-blue-line);
+    width: 325px;
+}
+
+.profile {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.profile p {
+    color: var(--soft-blue);
+    color: 16px;
+}
+
+.profile span {
+    color: var(--white);
+}
+
+.profile span:hover {
+    color: var(--cyan);
+}
+
+.attribution {
+    text-align: center;
+    color: var(--white);
+    word-spacing: 2px;
+}

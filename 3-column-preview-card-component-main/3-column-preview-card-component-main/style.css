@@ -1,0 +1,109 @@
+    @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+    /****ROOT****/
+    /************/
+    
+     :root {
+        /* PRIMARY COLORS */
+        --color-primary-bright-orange: hsl(31, 77%, 52%);
+        --color-primary-dark-cyan: hsl(184, 100%, 22%);
+        --color-primary-extraDark-cyan: hsl(179, 100%, 13%);
+        /* NEUTRAL COLORS */
+        --color-neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+        /*(paragraphs)*/
+        --color-neutral-light-gray: hsl( 0, 0%, 95%);
+        /* (background, headings, buttons)*/
+        /* FONT FAMILY */
+        --font-big-shoulders: "Big Shoulders Display";
+        --font-lexend: "Lexend Deca";
+    }
+    /* Global clear */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: var(--color-neutral-light-gray);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 60px;
+    }
+    
+    .plan {
+        padding: 3em;
+    }
+    /* for all of the cards */
+    
+    .sedans {
+        background-color: var(--color-primary-bright-orange);
+        color: var(--color-primary-bright-orange);
+    }
+    
+    .suvs {
+        background-color: var(--color-primary-dark-cyan);
+    }
+    
+    .luxury {
+        background-color: var(--color-primary-extraDark-cyan);
+    }
+    
+    .img-holder {
+        margin-bottom: 25px;
+    }
+    
+    .title {
+        color: var(--color-neutral-light-gray);
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        font-family: var(--font-big-shoulders);
+    }
+    
+    .text-para {
+        color: var(--color-neutral-transparent-white);
+        margin-bottom: 70px;
+        line-height: 1.5;
+    }
+    /* for all of the cards */
+    /* button part */
+    
+    .btn {
+        padding: 15px 27px;
+        border-radius: 50px;
+        border: 0;
+    }
+    
+    .sedans-btn {
+        color: var(--color-primary-bright-orange);
+    }
+    
+    .suvs-btn {
+        color: var(--color-primary-dark-cyan);
+    }
+    
+    .luxury-btn {
+        color: var(--color-primary-extraDark-cyan);
+    }
+    /* responisve part */
+    
+    @media screen and (max-width: 400px) {
+        .card {
+            flex-direction: column;
+            max-width: 330px;
+        }
+        .attribution {
+            width: 330px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }

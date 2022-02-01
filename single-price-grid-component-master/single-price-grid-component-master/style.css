@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --ligthcyan: hsl(179, 78%, 49%);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    background-color: var(--LightGray);
+}
+
+.container {
+    margin-top: 130px;
+    margin-bottom: 150px;
+}
+
+.title {
+    color: var(--Cyan);
+    font-size: 30px;
+}
+
+.money-back {
+    color: var(--BrightYellow);
+}
+
+.second {
+    background-color: var(--Cyan);
+}
+
+.third {
+    background-color: var(--ligthcyan);
+}
+
+.second-title {
+    font-size: 20px;
+}
+
+.dollars {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.monthy {
+    font-size: 10px;
+    color: var(--LightGray);
+}
+
+.btn {
+    background-color: var(--BrightYellow);
+}
+
+ul {
+    color: var(--LightGray);
+}
+
+.rounder-top {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.rounder-bottom {
+    border-radius: 0 0 10px 10px;
+}
+
+.attribution {
+    margin-top: -120px;
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        width: 95% !important;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .container {
+        width: 85% !important;
+    }
+}

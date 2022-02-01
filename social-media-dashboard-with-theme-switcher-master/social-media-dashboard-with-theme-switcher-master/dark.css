@@ -1,0 +1,40 @@
+:root{
+    --Very-Dark-Blue(BG): hsl(230, 17%, 14%);
+}
+
+body.night-mode{
+    transition: .5s;
+    background-color: hsl(230, 17%, 14%);
+}
+
+.night-mode .card-color {
+    background-color: hsl(232, 19%, 15%);
+}
+
+.night-mode .card-color:hover {
+    background-color: hsl(232, 19%, 26%);
+}
+
+.night-mode .title-bar{
+    color: white;
+}
+
+ .night-mode .icon-text{
+     color: green;
+ }
+
+ .night-mode .display-3{
+     color: white;
+ }
+
+ .night-mode .mb-0{
+     color: hsl(228, 34%, 66%);
+ }
+
+ .night-mode .fw-bolder{
+     color: white;
+ }
+
+.night-mode .overview{
+    color: white;
+}
